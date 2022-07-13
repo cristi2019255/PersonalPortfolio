@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/index.js"></script>
+    <script src="./Character/main.js" type="module"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark static-top bg-dark">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+                <input type="checkbox" class="checkbox" id="toggle-checkbox"/>
+                <label for="toggle-checkbox" class="label" id="toggle-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball" id="toggle-ball"></div>
+                </label>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Personal Portfolio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html"> Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workExperience.html"> Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="honoursAndAwards.html"> Honours and Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="languages.html"> Languages </a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div id="top-section">
+        <div id="welcome-msg">Welcome to my personal Portfolio</div>
+        <img id="profile-image" src="./img/profile-img.png" alt="profile-image">
+        <div id="developer-name">Grosu Cristian</div>
+        <div>IT specialist</div>
+        <div id="svg" style="height: 150px;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <defs>
+                    <linearGradient id="MyGradient" gradientTransform="rotate(90)">
+                        <stop offset="0%"  stop-color="#39393b" />
+                        <stop offset="100%" stop-color="#ffffff" />
+                    </linearGradient>
+                </defs>
+                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" id="wave">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div id="presentation-section">
+        <div id="short-description">
+            <div id="typewriter">
+                <p id="welcome-2-msg">Hi, I’m Cristian. Nice to meet you!</p>
+                <p>22 years old student.</p>
+                <p>
+                    I am enthusiastic, responsible, and technically skilled candidate with good problem - solving abilities,self-motivated and self-directed.
+                </p>
+                <p>
+                    I am able to stay focused on the ultimate goal and continue to work toward that result. Productive in both self-managed and team-based projects .
+                </p>
+                <p>
+                    Quickly learn new technologies and paying big attention to details.I am able to work well under pressure,to accomplish tasks under minimal direction and supervision and to adhere to strict deadlines.
+                </p>
+                <p>
+                    Currently very interested in Artificial Intelligence, Mobile Applications on Android, Full stack Web Developement
+                    and Games Development ( with Unity ).
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex">
+                    <div class="mb-3 box-shadow align-items-center">
+                        <img class="icon" src="./img/gamepad.png" alt="game-icon"/>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="mb-3 box-shadow align-items-center">
+                        <img class="icon" src="./img/web.png" alt="full-stack-icon"/>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="mb-3 box-shadow align-items-center">
+                        <img class="icon" src="./img/android.png" alt="android-dev-icon"/>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="mb-3 box-shadow align-items-center">
+                        <div class="h-100 d-flex">
+                            <img class="icon align-self-center" style="margin-left: 25%" src="./img/AI.png" alt="artificial-intelligence-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="skills">
+                <div class="col-md-3 d-flex" >
+                    <div class="card mb-3 box-shadow align-items-center">
+                        <div class="card-body">
+                            <div class="h4">Game Developer on Unity</div>
+                            <p>Game Development is a just hobby right now,however I can make a good indie game in Unity.</p>
+                            <div class="h5"> Languages I speak:</div>
+                            <ul>
+                                <li>C#</li>
+                            </ul>
+                            <div>Some of my games on Unity</div>
+                            <img style="border-radius: 5%" class="image-in-skills-table mt-5" src="./img/game_screenshot.jpg" alt="game-screenshot">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="card mb-3 box-shadow align-items-center">
+                        <div class="card-body">
+                            <div class="h4">Full-stack Web Developer</div>
+                            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                            <div class="h5"> Languages I speak:</div>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>C# (.NET framework)</li>
+                                <li>React framework</li>
+                                <li>Java (Vaadin, Spring)</li>
+                            </ul>
+                            <div>Some projects:</div>
+
+                            <div>//Todo project (to do is the name of the project)</div>
+                            <img class="image-in-skills-table m-2" src="./img/to-do-project.png" alt="to-do-project">
+                            <p>
+                                A site where people search recipes by products they have,with oportunity to scan products directly throught barcodes.A project made with Typescript,Ionic,React and C#(.net)
+                            </p>
+                            <a href="https://dev.azure.com/mirunamihai0735/Proiect%20Colectiv%20332/_git/TODO">link</a>
+
+                            <div>
+                                <img style="width: 45%;padding: 0 2.5%" src="./img/movies-shop-website-1.png" alt="movies-website-project-1">
+                                <img style="width: 45%;padding: 0 2.5%" src="./img/movies-shop-website-2.png" alt="movies-website-project-2">
+                            </div>
+                            <a href="https://github.com/cristi2019255/CinemWeb">link</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="card mb-3 box-shadow align-items-center">
+                        <div class="card-body">
+                            <div class="h4">Android Developer</div>
+                            <p>Good knowledge in order to make a mobile application in Android studio.Also can make IOS applications throught Ionic framework.</p>
+                            <div class="h5"> Languages I speak:</div>
+                            <ul>
+                                <li>Kotlin</li>
+                                <li>Java</li>
+                            </ul>
+                            <div>Some projects:</div>
+                            <ul>
+                                <li>
+                                    <div>Blinked app</div>
+                                    <p>
+                                        <a href="https://github.com/cristi2019255/Blinked">github link</a><br>
+                                        <a href="https://play.google.com/store/apps/details?id=com.BloodLinkedCluj1.blinked">PlayMarket link</a>
+                                    </p>
+                                    <p>
+                                        An application for blood donators ( made in a team of 5 people ).
+                                    </p>
+                                </li>
+                                <li>
+                                    <div>Other mobile apps:</div>
+                                    <a href="https://github.com/cristi2019255/mobileApplications">Mobile Applications GitHub link</a>
+                                    <a href="https://github.com/cinnamonbreakfast/itlabs_organizer">IT labs Timisoara Mobile Project</a>
+                                </li>
+                            </ul>
+                            <img class="image-in-skills-table" src="./img/bloodlinked_screen.png" alt="bloodlinked image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="card mb-3 box-shadow align-items-center">
+                        <div class="card-body">
+                            <div class="h4">AI(Artificial Inteligence)</div>
+                            <div>This is the field in witch took my licence diploma.</div>
+                            <div>I prefer to work in Python because of its libraries, however I can implement AI algorithms in all other languages specified in this portfolio.</div>
+                            <div></div>
+                            <div>Some projects:</div>
+                            <ul>
+                                <li>
+                                    <a href="http://licenta2021-grosu-cristian.herokuapp.com/">Application developed for my license work</a>
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/file/d/1oo6zx5xWJm6xQRUyzw_rsSKKK1_IRc-i/view?usp=sharing">Publication at Student Scientific Communication Session (Conference)</a>
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/file/d/1Bwk-B4Ypy2nwNnLGquK7PIAM1mu26Yra/view?usp=sharing">Article submitted at Mathematics scientific journal (July 2021) </a>
+                                </li>
+                            </ul>
+                            <img class="image-in-skills-table mb-4" src="./img/license_result.png" alt="licence results"/>
+                            <img class="image-in-skills-table mt-4" src="./img/license_app.png" alt="licence app"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="canvas"></div>
+
+</main>
+
+
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/cristi.grosu.921/" role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+
+
+            <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+            ></a>-->
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/cristi__grosu/" role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/cristi-grosu-155b93195/" role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cristi2019255" role="button"
+            ><i class="fab fa-github"></i
+            ></a>
+            <!--CV/ Resume-->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://drive.google.com/file/d/1TOpReRVdqoUW0e09dXA86Owb5_hRs43b/view?usp=sharing" role="button">
+                <i class="far fa-file-pdf"></i>
+            </a>
+        </section>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <p>
+                You can contact me at:
+            
+            <div>+31644791452</div>
+            <div>+37360119977</div>
+            <div>cristi2019255@gmail.com</div>
+            <div>cristi.grosu.2013@mail.ru</div>
+            </p>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021
+    </div>
+</footer>
+
+
+</body>
+</html>
