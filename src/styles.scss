@@ -19,3 +19,17 @@ body{
     background-color: $bg-color;
     transition: background 0.2s linear, color .2s linear
 }
+
+.mat-dialog-container{
+    padding-top: 0 !important;
+}
+
+.mat-dialog-actions {
+    &[align='end'] {
+      justify-content: flex-end;
+    }
+  
+    &[align='center'] {
+      justify-content: center;
+    }
+  }

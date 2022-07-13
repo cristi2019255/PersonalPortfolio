@@ -8,10 +8,5 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {
-    var typewriter = document.getElementById('typewriter');
-    let typer = this.setupTypewriter(typewriter);
-  }
-
-  setupTypewriter(t: any) {}
+  ngOnInit(): void {}
 }

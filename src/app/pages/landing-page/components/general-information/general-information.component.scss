@@ -1,0 +1,31 @@
+
+@import '../../../../../styles.scss';
+
+.skills .card{
+    background-color: $bg-color;
+    color: $color;
+    /*border:1px deepskyblue solid;*/
+    box-shadow: 5px 10px 18px red;
+    margin-bottom: 2vw;
+}
+
+.icon{
+    padding: 2vh 1vw;
+    width: 50%;
+}
+.container{
+    margin: 10vh auto;
+}
+@media screen and (max-width: 768px) {
+    .icon{
+        width: 25%;
+    }
+}
+    
+.icon:hover{
+    animation: scale-up-down-up 2.5s linear;
+}
+@keyframes scale-up-down-up {
+    50% {transform: rotate(360deg) scale(0.5,0.5) ;}
+    100% {transform: scale(1,1) ;}
+}
