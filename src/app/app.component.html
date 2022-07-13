@@ -27,33 +27,33 @@
   <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
     <img class="avatar mat-elevation-z8" src="../assets/images/avatar.png" />
 
-    <h4 class="name">Cristian Grosu</h4>
-    <p class="designation">Software developer</p>
+    <h5 class="name">{{ "common.label.name" | transloco }}</h5>
+    <p class="designation">{{ "common.label.designation" | transloco }}</p>
 
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button" routerLink="/">
       <mat-icon>home</mat-icon>
-      <span>Home</span>
+      <span>{{ "sidebar.label.home" | transloco }}</span>
     </button>
     <button mat-button class="menu-button" routerLink="/education">
       <mat-icon>school</mat-icon>
-      <span>Education</span>
+      <span>{{ "sidebar.label.education" | transloco }}</span>
     </button>
     <button mat-button class="menu-button" routerLink="/work-experience">
       <mat-icon>business_center</mat-icon>
-      <span>Work Experience</span>
+      <span>{{ "sidebar.label.work-experience" | transloco }}</span>
     </button>
     <button mat-button class="menu-button" routerLink="/other-information">
       <mat-icon>info</mat-icon>
-      <span>Other information</span>
+      <span>{{ "sidebar.label.other-information" | transloco }}</span>
     </button>
 
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button" routerLink="/contact">
       <mat-icon>help</mat-icon>
-      <span>Contact</span>
+      <span>{{ "sidebar.label.contact" | transloco }}</span>
     </button>
   </mat-sidenav>
   <mat-sidenav-content>

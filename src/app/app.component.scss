@@ -64,7 +64,8 @@ mat-sidenav-container {
 .designation {
     margin-top: 2px;
     font-size: 0.7rem;
-    color: lightgrey;
+    color: $color;
+    font-weight: 200;
   }
   
 mat-divider {

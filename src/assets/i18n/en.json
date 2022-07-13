@@ -4,6 +4,14 @@
   "common.link.linkedin": "https://www.linkedin.com/in/cristi-grosu-155b93195/",
   "common.link.github": "https://github.com/cristi2019255",
   "common.link.cv": "https://drive.google.com/file/d/1NZNQhuikoqQH3WVx7GXXPYVq5OOGJN-q/view?usp=sharing",
+  "common.label.name": "Cristian Grosu",
+  "common.label.designation": "Software developer",
+
+  "sidebar.label.home": "Home",
+  "sidebar.label.education": "Education",
+  "sidebar.label.work-experience": "Work Experience",
+  "sidebar.label.other-information": "Other information",
+  "sidebar.label.contact": "Contact",
 
   "footer.message.contactMe": "You can contact me at:",
   "footer.label.numberNL": "+31644791452",
