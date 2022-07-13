@@ -1,1 +1,65 @@
-<router-outlet> Here comes my personal portfolio with Angular </router-outlet>
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  Welcome to my Personal Portfolio
+  <div id="theme-toggler">
+    <input
+      type="checkbox"
+      class="checkbox"
+      id="toggle-checkbox"
+      (change)="changeTheme($event)"
+    />
+    <label for="toggle-checkbox" class="label" id="toggle-label">
+      <mat-icon id="dark-theme-icon">brightness_4</mat-icon>
+      <mat-icon id="light-theme-icon">brightness_5</mat-icon>
+      <div class="ball" id="toggle-ball"></div>
+    </label>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src="../assets/images/avatar.png" />
+
+    <h4 class="name">Cristian Grosu</h4>
+    <p class="designation">Software developer</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/education">
+      <mat-icon>school</mat-icon>
+      <span>Education</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/work-experience">
+      <mat-icon>business_center</mat-icon>
+      <span>Work Experience</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/other-information">
+      <mat-icon>info</mat-icon>
+      <span>Other information</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/contact">
+      <mat-icon>help</mat-icon>
+      <span>Contact</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

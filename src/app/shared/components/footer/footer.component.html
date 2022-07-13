@@ -1,0 +1,65 @@
+<div class="text-center text-white w-100" id="footer">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section>
+      <!-- Facebook -->
+      <a
+        target="”_blank”"
+        class="btn btn-outline-light btn-floating m-1"
+        href="{{ 'common.link.facebook' | transloco }}"
+        role="button"
+      >
+        <i class="fa fa-facebook-f"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a
+        target="”_blank”"
+        class="btn btn-outline-light btn-floating m-1"
+        href="{{ 'common.link.instagram' | transloco }}"
+        role="button"
+        ><i class="fa fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        target="”_blank”"
+        class="btn btn-outline-light btn-floating m-1"
+        href="{{ 'common.link.linkedin' | transloco }}"
+        role="button"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+
+      <!-- Github -->
+      <a
+        target="”_blank”"
+        class="btn btn-outline-light btn-floating m-1"
+        href="{{ 'common.link.github' | transloco }}"
+        role="button"
+        ><i class="fa fa-github"></i
+      ></a>
+      <!--CV/ Resume-->
+      <a
+        target="”_blank”"
+        class="btn btn-outline-light btn-floating m-1"
+        href="{{ 'common.link.cv' | transloco }}"
+        role="button"
+      >
+        <i class="fa fa-file"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+    <section class="mb-3 mt-3">
+      {{ "footer.message.contactMe" | transloco }}
+
+      <div>{{ "footer.label.numberNL" | transloco }}</div>
+      <div>{{ "footer.label.numberMD" | transloco }}</div>
+      <div>{{ "footer.label.email1" | transloco }}</div>
+      <div>{{ "footer.label.email2" | transloco }}</div>
+    </section>
+  </div>
+  <div class="text-center p-3" id="reserved">
+    {{ "footer.label.reserved" | transloco }}
+  </div>
+</div>

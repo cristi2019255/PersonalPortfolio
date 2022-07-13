@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --bg-color: #343a40;
+    --color: #ffffff;
+}
+
+$bg-color: var(--bg-color);
+$color: var(--color);
+
+*{
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box
+}
+
+body{
+    color: $color;
+    background-color: $bg-color;
+    transition: background 0.2s linear, color .2s linear
+}

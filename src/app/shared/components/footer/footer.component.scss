@@ -1,0 +1,10 @@
+@import '../../../../styles.scss';
+#reserved{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    background-color: $bg-color;
+    color: $color !important;
+}

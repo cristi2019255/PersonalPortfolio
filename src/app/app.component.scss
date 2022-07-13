@@ -1,0 +1,116 @@
+@import '../styles.scss';
+
+mat-toolbar {
+    background: $bg-color;
+    color: $color;
+    position: relative;
+  }
+
+#theme-toggler{
+  position: absolute;
+  right: 16px;
+}  
+  
+  
+mat-sidenav {
+    margin: 16px;
+    width: 250px;
+    border-right: none;
+    background: $bg-color;
+    color: $color;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  
+.content {
+    height: calc(100vh - 120px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    position: relative;
+    overflow: auto;
+  }
+  
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+  
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    mat-icon {
+      margin-right: 8px;
+    }
+  }
+  
+.avatar {
+    margin-top: 16px;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 2px white;
+  }
+  
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+  }
+  
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+  }
+  
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#toggle-checkbox{
+  opacity: 0;
+  position: absolute
+}
+
+#toggle-label{
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 50px;
+  padding: 5px
+}
+
+#toggle-ball{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform .2s linear
+}
+
+#toggle-checkbox:checked + #toggle-label #toggle-ball{
+  transform: translateX(24px)
+}
+
+#dark-theme-icon{
+  color: #f1c40f;
+  font-size: 19px;
+}
+#light-theme-icon{
+  color: #f1c40f;
+  font-size: 19px;
+}
