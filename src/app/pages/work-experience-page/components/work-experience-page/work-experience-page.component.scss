@@ -1,22 +1,23 @@
 @import '../../../../../styles.scss';
 
 .slide1{
-    //background: linear-gradient(165deg,#ffc0cb,#ffd700);
-
     background: linear-gradient(#928DAB, $bg-color);
 }
 .slide2{
-    //background: linear-gradient(165deg,#ffffff,#00bfff);
-
+    background: linear-gradient(#928DAB, $bg-color);
+}
+.slide4{
     background: linear-gradient(#928DAB, $bg-color);
 }
 .slide3{
-    //background: linear-gradient(165deg,#e7b6b6,#e74646);
-
     background: linear-gradient(#928DAB, $bg-color);
 }
 
 .slide{
     height: 60vh;
     color: $color;
+}
+
+img{
+    border-radius: 10%; //20px
 }

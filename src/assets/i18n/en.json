@@ -70,6 +70,45 @@
   "landing-page.message.skills.dialog.web-dev.message2": "//Todo project (to do is the name of the project)",
   "landing-page.message.skills.dialog.web-dev.message3": "A site where people search recipes by products they have,with opportunity to scan products directly through barcode. A project made with Typescript,Ionic,React and C#(.Net)",
 
+  "education-page.label.education1.name": "High school \"Vasile Alexandri\"",
+  "education-page.label.education1.place": "Ungheni, Republic of Moldova",
+  "education-page.label.education1.period": "September 2010 - July 2018",
+  "education-page.label.education1.grade": "Average grade: 10 / 10",
+
+  "education-page.label.education2.name": "Bachelor degree at faculty of Mathematics and Computer Science",
+  "education-page.label.education2.place": "\"Babes Bolyai\" University, Cluj-Napoca, Romania",
+  "education-page.label.education2.period": "September 2018 - July 2021",
+  "education-page.label.education2.grade": "Average grade: 9.8 / 10",
+  "education-page.label.education2.thesis": " Bachelor thesis topic: Applications of artificial intelligence in evolutionary art.",
+
+  "education-page.label.education3.name": "Master degree at faculty of Computer Science",
+  "education-page.label.education3.place": "Utrecht University, Netherlands",
+  "education-page.label.education3.period": "September 2021 - July 2023",
+  "education-page.label.education3.grade": "Average grade: 9 / 10",
+
+  "work-experience-page.label.short-description": "Short description:",
+  "work-experience-page.label.tech-stack": "Tech stack: ",
+
+  "work-experience-page.label.work-experience4.name": "Full stack web developer at Do it big agency",
+  "work-experience-page.label.work-experience4.period": "15 November 2021 - 18 February 2022",
+  "work-experience-page.label.work-experience4.description": "At this company I was involved in developing web applications for food delivery and restaurants.",
+  "work-experience-page.label.work-experience4.tech-stack": "Angular, Angular Material, TypeScript, Node.js (with Nest.js), PostgreSQL, AWS services",
+
+  "work-experience-page.label.work-experience3.name": "Co-founder & Android Developer at \"Bloodlinked\"",
+  "work-experience-page.label.work-experience3.period": "02 December 2019 - present",
+  "work-experience-page.label.work-experience3.description": "This is a mobile application was initially developed together with a team of 2 programmers and 2 business specialists during a hackathon and after that perfected and placed on Play Market. The application is a network for blood donors that bring together people who need blood and who are ready to donate this blood for them.",
+  "work-experience-page.label.work-experience3.tech-stack": "Java, Android Studio, Firebase",
+
+  "work-experience-page.label.work-experience2.name": "Android Developer at \"IT Labs Timisoara\"",
+  "work-experience-page.label.work-experience2.period": "6 July 2020 - 13 September 2020",
+  "work-experience-page.label.work-experience2.description": "I was the project manager of a 4 programmers team. The project was a to develop an app for services appointments, both on mobile and web platforms.",
+  "work-experience-page.label.work-experience2.tech-stack": "Kotlin, Spring, PostgreSQL",
+
+  "work-experience-page.label.work-experience1.name": "Java Programmer at \"Cedacri International\"",
+  "work-experience-page.label.work-experience1.period": "6 August 2020 - 13 March 2021",
+  "work-experience-page.label.work-experience1.description": "At this company I was involved in web development projects that required knowledge of Java language both on back-end (Spring Framework) and on front-end (Vaadin).",
+  "work-experience-page.label.work-experience1.tech-stack": "Java, Spring Framework, Vaadin, PostgreSQL",
+
   "footer.message.contactMe": "You can contact me at:",
   "footer.label.numberNL": "+31644791452",
   "footer.label.numberMD": "+37360119977",
