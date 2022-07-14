@@ -23,6 +23,8 @@
   "common.label.vaadin": "Vaadin",
   "common.label.spring": "Spring framework",
 
+  "common.message.welcome": "Welcome to my Portfolio!",
+
   "common.btn.close": "X",
 
   "sidebar.label.home": "Home",

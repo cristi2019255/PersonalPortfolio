@@ -96,6 +96,12 @@ export class OtherInformationsPageComponent implements OnInit {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     camera.position.z = 300;
+    if (window.innerWidth <= 770) {
+      camera.position.z = 500;
+    }
+    if (window.innerWidth <= 420) {
+      camera.position.z = 600;
+    }
     return camera;
   }
 
