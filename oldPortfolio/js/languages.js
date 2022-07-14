@@ -1,9 +1,4 @@
 $(document).ready(() => {
-  setTheme($.cookie("theme"), false);
-
-  $("footer").on("hover", () => {
-    this.style.opacity = "1";
-  });
   // Gen data
   let gData = [
     { lat: 51.3, long: -0.7 }, //London

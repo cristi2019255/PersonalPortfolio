@@ -30,6 +30,8 @@ mat-sidenav {
     margin-left: 32px;
     position: relative;
     overflow: auto;
+    background-color: $bg-color;
+    color: $color;
   }
   
 mat-sidenav-container {

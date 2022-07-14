@@ -1,114 +1,98 @@
-<hr />
-<div id="awards">
-  <div class="h3">Honours and awards</div>
-  <ul class="ul-no-dots">
-    <li>
-      Laureate of the Gala of Students from Moldova(Chisinau,Republic of
-      Moldova,2020)
-    </li>
-    <li>
-      2nd Place at UBB Hack for Goods Hackathon (Romania,Cluj Napoca,2020)
-    </li>
-    <li>
-      1st place at the Olympiad of Economic Sciences at the Republican level (
-      Republic of Moldova, Chisinau, 2018 )
-    </li>
-    <li>
-      1st place at the regional Olympiad of Informatics ( Ungheni district,
-      Republic of Moldova, 2018 )
-    </li>
-    <li>
-      2nd place at the regional Olympiad of Mathematics ( Ungheni district,
-      Republic of Moldova, 2018 )
-    </li>
-    <li>
-      1st place at the regional Olympiad of Informatics ( Ungheni district,
-      Republic of Moldova, 2017 )
-    </li>
-    <li>
-      1st place at the regional Olympiad of Mathermatics ( Ungheni district,
-      Republic of Moldova, 2017 )
-    </li>
-    <li>
-      11th in the ranking of the Republican Mathematic Olympiad edition of 2017
-      (Republic of Moldova)
-    </li>
-    <li>
-      2nd place at the regional Olympiad of Physics ( Ungheni district, Republic
-      of Moldova, 2017 )
-    </li>
-    <li>
-      2nd place at the regional Olympiad of Geography ( Ungheni district,
-      Republic of Moldova, 2017 )
-    </li>
-    <li>
-      3rd place at the Republican Olympiad of Economics( Republic of Moldova,
-      Chisinau, 2017 )
-    </li>
-    <li>
-      1st place at the regional Olympiad of Informatics ( Ungheni district,
-      Republic of Moldova, 2016 )
-    </li>
-    <li>
-      2nd place at the regional Olympiad of Mathematics ( Ungheni district,
-      Republic of Moldova, 2016 )
-    </li>
-    <li>
-      2nd place at the regional Olympiad of Physics ( Ungheni district, Republic
-      of Moldova, 2016 )
-    </li>
-    <li>1st place - Economic event "Innovation Camp" 2017</li>
-  </ul>
-
-  <div class="h3">Publications</div>
-  <ul class="ul-no-dots">
-    <li>
-      Article "Applications of artificial intelligence in evolutionary art"
-      submitted at Mathematics scientific journal (July 2021) <br />
-      in collaboration with doctor Camelia Chira.
-    </li>
-    <li>
-      Paper "Optimization algorithms in autonomous art generation." <br />
-      presented at Student Scientific Communication Session (Conference) <br />
-      Cluj-Napoca, Romania 2021.
-    </li>
-  </ul>
-</div>
-<div style="height: 15vw"></div>
-<hr />
-
-<!--Languages-->
-
-<div class="container mt-5">
-  <div class="row" style="height: 90vh">
-    <div class="col-6 fade-in-effect d-flex">
-      <ul id="languages-list" class="align-self-center">
-        <li>Romanian (Mother tongue)</li>
-        <li>
-          English Comprehension, listening, speaking, writing and reading at C1
-          level
-          <ul>
-            <li>Cambridge CAE level C1 and B2</li>
-            <li>IBT Toefl 80</li>
+<div class="default">
+  <!--Languages-->
+  <div class="container mt-3 mb-3 languages">
+    <div class="row h-100">
+      <div
+        class="col-md-6 d-flex px-2 ml-2 justify-content-center align-items-center"
+      >
+        <div>
+          <div class="h3">
+            {{ "other-information-page.label.languages" | transloco }}
+          </div>
+          <ul class="align-self-center">
+            <li>{{ "other-information-page.label.language1" | transloco }}</li>
+            <li>
+              {{ "other-information-page.label.language2" | transloco }}
+              <ol>
+                <li>
+                  {{
+                    "other-information-page.label.language2.additional1"
+                      | transloco
+                  }}
+                </li>
+                <li>
+                  {{
+                    "other-information-page.label.language2.additional2"
+                      | transloco
+                  }}
+                </li>
+              </ol>
+            </li>
+            <li>
+              {{ "other-information-page.label.language3" | transloco }}
+            </li>
+            <li>
+              {{ "other-information-page.label.language4" | transloco }}
+            </li>
+            <li>
+              {{ "other-information-page.label.language5" | transloco }}
+            </li>
+            <li>{{ "other-information-page.label.language6" | transloco }}</li>
           </ul>
-        </li>
-        <li>
-          Russian Comprehension, listening, speaking, writing and reading at C2
-          level
-        </li>
-        <li>
-          French
-          <span>
-            Listening and Reading A2-level <br />Speaking/Writing at A1 level
-          </span>
-        </li>
-        <li>
-          German Listening/Reading <br />
-          /Speaking/Writing at A1 level
-        </li>
-        <li>Italian A1 level</li>
-      </ul>
+        </div>
+      </div>
+
+      <div
+        class="col-md-6 d-flex align-items-center"
+        id="globeVisualisation"
+      ></div>
     </div>
-    <div class="col-6 d-flex align-items-center" id="globeViz"></div>
   </div>
+
+  <!--Awards-->
+  <hr />
+  <div id="awards">
+    <div class="h3">
+      {{ "other-information-page.label.publications" | transloco }}
+    </div>
+    <ul class="ul-no-dots">
+      <li>
+        {{ "other-information-page.label.publication1" | transloco }}
+      </li>
+      <li>
+        {{ "other-information-page.label.publication2" | transloco }}
+      </li>
+    </ul>
+  </div>
+  <div class="h3">{{ "other-information-page.label.awards" | transloco }}</div>
+  <ul class="ul-no-dots">
+    <li>
+      {{ "other-information-page.label.award1" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award2" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award3" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award4" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award5" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award6" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award7" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award8" | transloco }}
+    </li>
+    <li>
+      {{ "other-information-page.label.award9" | transloco }}
+    </li>
+  </ul>
 </div>
+<hr />

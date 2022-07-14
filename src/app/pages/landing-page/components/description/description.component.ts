@@ -33,7 +33,12 @@ export class DescriptionComponent implements OnInit {
 
   typeInformation(): void {
     const target = document.querySelector('#type-writer');
-    const writer = new Typewriter(target, { loop: true, typeSpeed: 50 });
+
+    const writer = new Typewriter(target, {
+      loop: true,
+      typeSpeed: 50,
+      typeColor: 'inherit',
+    });
 
     writer
       .type(this.translateService.translate(helloMessage))
