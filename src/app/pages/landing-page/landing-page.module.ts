@@ -10,6 +10,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { WebDevelopmentDialog } from './components/web-development-dialog/web-development-dialog.component';
 import { AndroidDevelopmentDialog } from './components/android-development-dialog/android-development-dialog.component';
 import { AiDevelopmentDialog } from './components/ai-development-dialog/ai-development-dialog.component';
+import { TranslocoModule } from '@ngneat/transloco';
 @NgModule({
   declarations: [
     LandingPageComponent,
@@ -25,6 +26,7 @@ import { AiDevelopmentDialog } from './components/ai-development-dialog/ai-devel
     LandingPageRoutingModule,
     MatIconModule,
     MatDialogModule,
+    TranslocoModule,
   ],
   exports: [LandingPageComponent],
 })

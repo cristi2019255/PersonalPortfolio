@@ -1,42 +1,75 @@
 <div mat-dialog-actions align="end">
-  <button mat-dialog-close class="btn btn-outline-danger">X</button>
+  <button mat-dialog-close class="btn btn-outline-danger">
+    {{ "common.btn.close" | transloco }}
+  </button>
 </div>
 <mat-dialog-content class="mt-4">
-  <p>
-    Good knowledge in order to make a mobile application in Android studio.Also
-    can make IOS applications throught Ionic framework.
-  </p>
-  <div class="h5">Languages I speak:</div>
-  <ul>
-    <li>Kotlin</li>
-    <li>Java</li>
-  </ul>
-  <div>Some projects:</div>
-  <ul>
-    <li>
-      <div>Blinked app</div>
-      <p>
-        <a href="https://github.com/cristi2019255/Blinked">github link</a><br />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          {{
+            "landing-page.message.skills.dialog.android-dev.message1"
+              | transloco
+          }}
+        </p>
+        <div class="h5">
+          {{ "landing-page.message.skills.dialog.languages-enum" | transloco }}
+        </div>
+        <ul>
+          <li>{{ "common.label.kotlin" | transloco }}</li>
+          <li>{{ "common.label.java" | transloco }}</li>
+        </ul>
+        <div class="h5">
+          {{ "landing-page.message.skills.dialog.projects-enum" | transloco }}
+        </div>
+        <ul>
+          <li>
+            <a href="https://github.com/cristi2019255/Blinked" target="_blank">
+              {{
+                "landing-page.message.skills.dialog.android-dev.project1.name"
+                  | transloco
+              }}
+            </a>
+            {{
+              "landing-page.message.skills.dialog.android-dev.project1.description"
+                | transloco
+            }}
+          </li>
+          <li>
+            <a
+              href="https://github.com/cristi2019255/mobileApplications"
+              target="_blank"
+              >{{
+                "landing-page.message.skills.dialog.android-dev.project2.link"
+                  | transloco
+              }}</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/cinnamonbreakfast/itlabs_organizer"
+              target="_blank"
+              >{{
+                "landing-page.message.skills.dialog.android-dev.project3.link"
+                  | transloco
+              }}</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
         <a
           href="https://play.google.com/store/apps/details?id=com.BloodLinkedCluj1.blinked"
-          >PlayMarket link</a
+          target="_blank"
         >
-      </p>
-      <p>An application for blood donators ( made in a team of 5 people ).</p>
-    </li>
-    <li>
-      <div>Other mobile apps:</div>
-      <a href="https://github.com/cristi2019255/mobileApplications"
-        >Mobile Applications GitHub link</a
-      >
-      <a href="https://github.com/cinnamonbreakfast/itlabs_organizer"
-        >IT labs Timisoara Mobile Project</a
-      >
-    </li>
-  </ul>
-  <img
-    class="image-in-skills-table"
-    src="./assets/images/bloodlinked_screen.png"
-    alt="bloodlinked image"
-  />
+          <img
+            class="image-in-skills-table"
+            src="./assets/images/bloodlinked_screen.png"
+            alt="bloodlinked image"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
 </mat-dialog-content>

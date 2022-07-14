@@ -1,18 +1,34 @@
 <div mat-dialog-actions align="end">
-  <button mat-dialog-close class="btn btn-outline-danger">X</button>
+  <button mat-dialog-close class="btn btn-outline-danger">
+    {{ "common.btn.close" | transloco }}
+  </button>
 </div>
 <mat-dialog-content class="mt-4">
   <div class="container">
     <div class="row">
-      <div class="col-6">
-        <p>Game Development is a just hobby at the moment.</p>
-        <p>However I can make a good indie game in Unity.</p>
+      <div class="col-md-6">
+        <p>
+          {{
+            "landing-page.message.skills.dialog.game-dev.message1" | transloco
+          }}
+        </p>
+        <p>
+          {{
+            "landing-page.message.skills.dialog.game-dev.message2" | transloco
+          }}
+        </p>
         <br />
-        <div class="h5">Languages I speak:</div>
-        <p>C#</p>
-        <div>One of my game made with Unity =></div>
+        <div class="h5">
+          {{ "landing-page.message.skills.dialog.languages-enum" | transloco }}
+        </div>
+        <p>{{ "common.label.c-sharp" | transloco }}</p>
+        <div>
+          {{
+            "landing-page.message.skills.dialog.game-dev.message3" | transloco
+          }}
+        </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <img
           class="image-in-skills-table mt-2 col-12"
           src="./assets/images/game_screenshot.jpg"

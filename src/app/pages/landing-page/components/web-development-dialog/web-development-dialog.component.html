@@ -1,51 +1,84 @@
 <div mat-dialog-actions align="end">
-  <button mat-dialog-close class="btn btn-outline-danger">X</button>
+  <button mat-dialog-close class="btn btn-outline-danger">
+    {{ "common.btn.close" | transloco }}
+  </button>
 </div>
 
 <mat-dialog-content class="mt-4">
   <p>
-    I like to code things from scratch, and enjoy bringing ideas to life in the
-    browser.
+    {{ "landing-page.message.skills.dialog.web-dev.message1" | transloco }}
   </p>
-  <div class="h5">Languages I speak:</div>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>TypeScript</li>
-    <li>C# (.NET framework)</li>
-    <li>React framework</li>
-    <li>Java (Vaadin, Spring)</li>
-  </ul>
-  <div>Some projects:</div>
-
-  <div>//Todo project (to do is the name of the project)</div>
-  <img
-    class="image-in-skills-table m-2"
-    src="./assets/images/to-do-project.png"
-    alt="to-do-project"
-  />
-  <p>
-    A site where people search recipes by products they have,with oportunity to
-    scan products directly throught barcodes.A project made with
-    Typescript,Ionic,React and C#(.net)
-  </p>
-  <a
-    href="https://dev.azure.com/mirunamihai0735/Proiect%20Colectiv%20332/_git/TODO"
-    >link</a
-  >
-
-  <div>
-    <img
-      style="width: 45%; padding: 0 2.5%"
-      src="./assets/images/movies-shop-website-1.png"
-      alt="movies-website-project-1"
-    />
-    <img
-      style="width: 45%; padding: 0 2.5%"
-      src="./assets/images/movies-shop-website-2.png"
-      alt="movies-website-project-2"
-    />
+  <div class="h5">
+    {{ "landing-page.message.skills.dialog.languages-enum" | transloco }}
   </div>
-  <a href="https://github.com/cristi2019255/CinemWeb">link</a>
+  <ul>
+    <li>{{ "common.label.html" | transloco }}</li>
+    <li>{{ "common.label.css" | transloco }}</li>
+    <li>{{ "common.label.javascript" | transloco }}</li>
+    <li>{{ "common.label.typescript" | transloco }}</li>
+    <li>
+      {{ "common.label.c-sharp" | transloco }} ({{
+        "common.label.net" | transloco
+      }})
+    </li>
+    <li>{{ "common.label.react" | transloco }}</li>
+    <li>
+      {{ "common.label.java" | transloco }} ({{
+        "common.label.vaadin" | transloco
+      }}, {{ "common.label.spring" | transloco }})
+    </li>
+  </ul>
+  <div class="h5">
+    {{ "landing-page.message.skills.dialog.projects-enum" | transloco }}
+  </div>
+  <hr />
+  <div class="container">
+    <a
+      href="https://dev.azure.com/mirunamihai0735/Proiect%20Colectiv%20332/_git/TODO"
+      target="_blank"
+    >
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          {{
+            "landing-page.message.skills.dialog.web-dev.message2" | transloco
+          }}
+        </div>
+        <div class="col-md-6">
+          <img
+            class="m-2"
+            src="./assets/images/to-do-project.png"
+            alt="to-do-project"
+          />
+        </div>
+      </div>
+    </a>
+
+    <hr />
+
+    <a href="https://github.com/cristi2019255/CinemWeb" target="_blank">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          {{
+            "landing-page.message.skills.dialog.web-dev.message3" | transloco
+          }}
+        </div>
+        <div class="col-md-6">
+          <div>
+            <img
+              class="m-2"
+              src="./assets/images/movies-shop-website-2.png"
+              alt="movies-website-project-2"
+            />
+            <img
+              class="m-2"
+              src="./assets/images/movies-shop-website-1.png"
+              alt="movies-website-project-1"
+            />
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <hr />
+  </div>
 </mat-dialog-content>

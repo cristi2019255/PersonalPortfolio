@@ -22,6 +22,8 @@ body{
 
 .mat-dialog-container{
     padding-top: 0 !important;
+    background-color: $bg-color;
+    color: $color;
 }
 
 .mat-dialog-actions {

@@ -1,41 +1,69 @@
 <div mat-dialog-actions align="end">
-  <button mat-dialog-close class="btn btn-outline-danger">X</button>
+  <button mat-dialog-close class="btn btn-outline-danger">
+    {{ "common.btn.close" | transloco }}
+  </button>
 </div>
 <mat-dialog-content class="mt-4">
-  <div>This is the field in witch took my bachelor thesis.</div>
   <div>
-    I prefer to work in Python because of its libraries, however I can implement
-    AI algorithms in all other languages specified in this portfolio.
+    {{ "landing-page.message.skills.dialog.ai-dev.message1" | transloco }}
   </div>
-  <div></div>
-  <div>Some projects:</div>
+  <div>
+    {{ "landing-page.message.skills.dialog.ai-dev.message2" | transloco }}
+  </div>
+
+  <div class="h5 mt-3">
+    {{ "landing-page.message.skills.dialog.projects-enum" | transloco }}
+  </div>
+
   <ul>
     <li>
-      <a href="http://licenta2021-grosu-cristian.herokuapp.com/"
-        >Application developed for my license work</a
+      <a
+        href="http://licenta2021-grosu-cristian.herokuapp.com/"
+        target="_blank"
+        >{{
+          "landing-page.message.skills.dialog.ai-dev.project1" | transloco
+        }}</a
       >
     </li>
     <li>
       <a
         href="https://drive.google.com/file/d/1oo6zx5xWJm6xQRUyzw_rsSKKK1_IRc-i/view?usp=sharing"
-        >Publication at Student Scientific Communication Session (Conference)</a
+        target="_blank"
+        >{{
+          "landing-page.message.skills.dialog.ai-dev.project2" | transloco
+        }}</a
       >
     </li>
     <li>
       <a
         href="https://drive.google.com/file/d/1Bwk-B4Ypy2nwNnLGquK7PIAM1mu26Yra/view?usp=sharing"
-        >Article submitted at Mathematics scientific journal (July 2021)
+        target="_blank"
+        >{{ "landing-page.message.skills.dialog.ai-dev.project3" | transloco }}
       </a>
     </li>
   </ul>
-  <img
-    class="image-in-skills-table mb-4"
-    src="./assets/images/license_result.png"
-    alt="licence results"
-  />
-  <img
-    class="image-in-skills-table mt-4"
-    src="./assets/images/license_app.png"
-    alt="licence app"
-  />
+  <div class="container">
+    <div class="row gap-x-2">
+      <div class="col-md-6 mt-2">
+        <a
+          href="http://licenta2021-grosu-cristian.herokuapp.com/"
+          target="_blank"
+        >
+          <img
+            class="licence-results"
+            src="./assets/images/license_result.png"
+            alt="licence results"
+          />
+        </a>
+      </div>
+      <div class="col-md-6 mt-2">
+        <a
+          href="https://drive.google.com/file/d/1Bwk-B4Ypy2nwNnLGquK7PIAM1mu26Yra/view?usp=sharing"
+          target="_blank"
+        >
+          <img src="./assets/images/license_app.png" alt="licence app" />
+        </a>
+      </div>
+    </div>
+  </div>
 </mat-dialog-content>
