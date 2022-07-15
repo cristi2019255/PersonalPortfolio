@@ -63,9 +63,9 @@ export class AppComponent {
 
   changeTheme(event: any) {
     if (event.target.checked) {
-      this.setThemeDark();
-    } else {
       this.setThemeLight();
+    } else {
+      this.setThemeDark();
     }
   }
 
