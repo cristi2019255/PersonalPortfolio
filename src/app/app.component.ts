@@ -72,17 +72,17 @@ export class AppComponent {
   setThemeDark() {
     console.log('change to dark');
     localStorage.setItem('theme', Themes.DARK);
-    document.documentElement.style.setProperty('--bg-color', themeColors.color);
-    document.documentElement.style.setProperty('--color', themeColors.bgColor);
-  }
-  setThemeLight() {
-    console.log('change to light');
-    localStorage.setItem('theme', Themes.LIGHT);
-
     document.documentElement.style.setProperty(
       '--bg-color',
       themeColors.bgColor
     );
     document.documentElement.style.setProperty('--color', themeColors.color);
+  }
+  setThemeLight() {
+    console.log('change to light');
+    localStorage.setItem('theme', Themes.LIGHT);
+
+    document.documentElement.style.setProperty('--bg-color', themeColors.color);
+    document.documentElement.style.setProperty('--color', themeColors.bgColor);
   }
 }
