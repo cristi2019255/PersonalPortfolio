@@ -1,0 +1,19 @@
+@import '../../../../../styles.scss';
+
+.input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-bottom: 1px solid #ccc !important;
+    color: $color !important;
+    background-color: $bg-color !important;
+    border-radius: 4px;
+    box-shadow : none !important;      
+}
+
+
+.input:focus {
+    outline: none !important;
+    background-color: inherit !important;
+}

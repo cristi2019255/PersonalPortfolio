@@ -1,0 +1,57 @@
+<form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+  {{ "contact-page.message.contact-form.name" | transloco }}
+  <input
+    id="name"
+    class="input"
+    formControlName="name"
+    placeholder="{{
+      'contact-page.message.contact-form.name.placeholder' | transloco
+    }}"
+  />
+  {{ "contact-page.message.contact-form.subject" | transloco }}
+  <input
+    id="subject"
+    class="input"
+    formControlName="subject"
+    placeholder="{{
+      'contact-page.message.contact-form.subject.placeholder' | transloco
+    }}"
+  />.
+  <br />
+  {{ "contact-page.message.contact-form.body" | transloco }}
+  <br />
+  <textarea
+    class="input"
+    id="message"
+    formControlName="message"
+    placeholder="{{
+      'contact-page.message.contact-form.body.placeholder' | transloco
+    }}"
+    rows="1"
+  ></textarea>
+  <br />
+  {{ "contact-page.message.contact-form.sender-email" | transloco }}
+  <input
+    type="email"
+    name="email"
+    ngModel
+    email="true"
+    id="email"
+    class="input"
+    formControlName="email"
+    placeholder="{{
+      'contact-page.message.contact-form.sender-email.placeholder' | transloco
+    }}"
+  />.
+  <br />
+  <button type="submit" class="btn btn-success mt-4 mb-4">
+    {{ "contact-page.button.contact-form.submit" | transloco }}
+  </button>
+</form>
+
+<div *ngIf="emailIsSent">
+  {{ "contact-page.message.contact-form.success" | transloco }}
+</div>
+<div *ngIf="emailSentError">
+  {{ "contact-page.message.contact-form.error" | transloco }} {{ errorMessage }}
+</div>

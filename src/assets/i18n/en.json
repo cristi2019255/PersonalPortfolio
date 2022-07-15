@@ -138,6 +138,21 @@
 
   "contact-page.message.contact-me": "Don't hesitate contact me now and let's change the world together!",
 
+  "contact-page.message.contact-form.name": "Hey, my name is ",
+  "contact-page.message.contact-form.subject": " and I would like to talk to you about ",
+  "contact-page.message.contact-form.body": "Here is a short message for you: ",
+  "contact-page.message.contact-form.sender-email": "Let's keep in touch, here is my email address: ",
+
+  "contact-page.message.contact-form.name.placeholder": "enter your name",
+  "contact-page.message.contact-form.subject.placeholder": "enter the subject",
+  "contact-page.message.contact-form.body.placeholder": " type your message",
+  "contact-page.message.contact-form.sender-email.placeholder": "enter your email address",
+
+  "contact-page.message.contact-form.success": "The mail was sent. Thanks! I will contact you as soon as possible.",
+  "contact-page.message.contact-form.error": "There was an error sending the mail. Please try again and make sure every field is completed correctly.",
+
+  "contact-page.button.contact-form.submit": "Contact Me",
+
   "footer.message.contactMe": "You can contact me at:",
   "footer.label.numberNL": "+31644791452",
   "footer.label.numberMD": "+37360119977",
