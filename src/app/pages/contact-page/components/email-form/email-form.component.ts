@@ -46,12 +46,12 @@ export class EmailFormComponent {
 
     const response = this.emailService.send(subject, body);
 
-    if (response !== 'OK') {
-      this.emailSentError = true;
-      this.emailIsSent = false;
-    } else {
+    if (response === 'OK') {
       this.emailSentError = false;
       this.emailIsSent = true;
+    } else {
+      this.emailSentError = true;
+      this.emailIsSent = false;
     }
   }
 }

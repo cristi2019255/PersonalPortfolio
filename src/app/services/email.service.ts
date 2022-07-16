@@ -14,7 +14,8 @@ export class EmailService {
   constructor() {}
 
   send(subject: string, body: string) {
-    return Email.send({
+    let message: string = 'OK';
+    Email.send({
       Host: emailHost,
       Username: emailSender,
       Password: emailPassword,
@@ -22,8 +23,11 @@ export class EmailService {
       From: emailSender,
       Subject: subject,
       Body: body,
-    }).then((message: any) => {
-      return message;
+    }).then((m: any) => {
+      message = m;
+      return m;
     });
+
+    return message;
   }
 }
