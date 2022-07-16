@@ -35,14 +35,16 @@ export class EmailFormComponent {
       return;
     }
 
-    let subject = `Personal Portfolio: ${this.emailForm.value.subject}`;
-    let body = `Hi Cristian, I am ${this.emailForm.value.name} and I would like to contact you regarding your portfolio. 
+    const information = this.emailForm.value;
+
+    let subject = `Personal Portfolio: ${information.subject}`;
+    let body = `Hi Cristian, I am ${information.name} and I would like to contact you regarding your portfolio. 
     <br/> <br/>
-    ${this.emailForm.value.message} 
+    ${information.message} 
     <br/> <br/>
-    Please contact me as soon as possible. 
+    Please contact me as soon as possible at my mail address: ${information.email}. 
     <br/> <br/>
-    Kind regards, ${this.emailForm.value.name}!`;
+    Kind regards, ${information.name}!`;
 
     const response = this.emailService.send(subject, body);
 
