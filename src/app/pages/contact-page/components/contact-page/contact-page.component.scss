@@ -2,8 +2,8 @@
     position: absolute;
     width: 0;
     height: 30px;
-    border: 2px solid;
-    border-radius: 2px;
+    border: 1px solid;
+    border-radius: 1px;
     animation: jumpInfinite 1.5s infinite;
   }
   
@@ -14,9 +14,9 @@
     left: -8px;
     width: 16px;
     height: 16px;
-    border-bottom: 4px solid;
-    border-right: 4px solid;
-    border-radius: 4px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-radius: 2px;
     transform: rotateZ(45deg);
   }
 

@@ -13,7 +13,7 @@ export class GreetingAnimationComponent implements OnInit {
   renderer: THREE.WebGLRenderer;
   camera: THREE.PerspectiveCamera;
   scene: THREE.Scene;
-  //controls: OrbitControls;
+  controls: OrbitControls;
 
   mixers: any[] = [];
   previousRAF: number | null = null;
@@ -28,7 +28,8 @@ export class GreetingAnimationComponent implements OnInit {
     this.renderer = this.initializeRenderer();
     this.camera = this.initializeCamera();
     this.scene = this.initializeScene();
-    //this.controls = this.initializeCameraControls();
+    this.controls = this.initializeCameraControls();
+    //this.addPlaneToScene();
   }
 
   ngOnInit(): void {}
@@ -86,7 +87,7 @@ export class GreetingAnimationComponent implements OnInit {
     const near = 1.0;
     const far = 1000.0;
     const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.set(45, 30, 0);
+    camera.position.set(60, 30, 0);
     return camera;
   }
 
@@ -119,16 +120,18 @@ export class GreetingAnimationComponent implements OnInit {
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
     controls.target.set(0, 20, 0);
     controls.update();
+    controls.enabled = false;
     return controls;
   }
 
   addPlaneToScene() {
     const plane = new THREE.Mesh(
-      new THREE.PlaneGeometry(100, 100, 10, 10),
+      new THREE.PlaneGeometry(10, 20, 10, 10),
       new THREE.MeshStandardMaterial({
         color: 0x202020,
       })
     );
+    plane.position.set(5, 0, this.pos);
     plane.castShadow = false;
     plane.receiveShadow = true;
     plane.rotation.x = -Math.PI / 2;
