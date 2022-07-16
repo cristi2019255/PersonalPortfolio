@@ -24,6 +24,7 @@ const themeColors = {
 export class AppComponent {
   title = 'PersonalPortfolio';
   theme: string;
+  openToWork = true;
 
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;

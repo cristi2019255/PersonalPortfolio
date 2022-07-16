@@ -13,7 +13,7 @@ export class GreetingAnimationComponent implements OnInit {
   renderer: THREE.WebGLRenderer;
   camera: THREE.PerspectiveCamera;
   scene: THREE.Scene;
-  controls: OrbitControls;
+  //controls: OrbitControls;
 
   mixers: any[] = [];
   previousRAF: number | null = null;
@@ -28,7 +28,7 @@ export class GreetingAnimationComponent implements OnInit {
     this.renderer = this.initializeRenderer();
     this.camera = this.initializeCamera();
     this.scene = this.initializeScene();
-    this.controls = this.initializeCameraControls();
+    //this.controls = this.initializeCameraControls();
   }
 
   ngOnInit(): void {}

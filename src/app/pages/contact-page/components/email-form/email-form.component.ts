@@ -37,14 +37,16 @@ export class EmailFormComponent {
 
     let subject = `Personal Portfolio: ${this.emailForm.value.subject}`;
     let body = `Hi Cristian, I am ${this.emailForm.value.name} and I would like to contact you regarding your portfolio. 
-    \n\n${this.emailForm.value.message}\n\n
-    Please contact me as soon as possible.\n\n
+    <br/> <br/>
+    ${this.emailForm.value.message} 
+    <br/> <br/>
+    Please contact me as soon as possible. 
+    <br/> <br/>
     Kind regards, ${this.emailForm.value.name}!`;
 
     const response = this.emailService.send(subject, body);
 
-    if (response.statusCode !== 201) {
-      this.errorMessage = response.message;
+    if (response !== 'OK') {
       this.emailSentError = true;
       this.emailIsSent = false;
     } else {
