@@ -26,12 +26,14 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
     <div class="avatar-container">
+      <a target="_blank" href="{{ 'common.link.linkedin' | transloco }}">
       <img class="avatar mat-elevation-z8" src="../assets/images/avatar.png" />
       <img
         class="avatar avatar-overlay mat-elevation-z8"
         src="../assets/images/open-to-work.png"
         *ngIf="openToWork"
       />
+      </a>
     </div>
     <h5 class="name">{{ "common.label.name" | transloco }}</h5>
     <p class="designation">{{ "common.label.designation" | transloco }}</p>
