@@ -3,9 +3,10 @@
   "common.link.instagram": "https://www.instagram.com/cristi__grosu/",
   "common.link.linkedin": "https://www.linkedin.com/in/cristi-grosu-155b93195/",
   "common.link.github": "https://github.com/cristi2019255",
-  "common.link.cv": "https://drive.google.com/file/d/1g_RyCodMAGLlvMV6fVJOAJ9vDwVkXPD2/view?usp=drive_link",
+  "common.link.cv": "https://drive.google.com/file/d/1g_RyCodMAGLlvMV6fVJOAJ9vDwVkXPD2/view?usp=sharing",
   "common.label.name": "Cristian Grosu",
   "common.label.designation": "Software developer",
+  "common.label.apex": "Apex",
   "common.label.c-sharp": "C#",
   "common.label.c++": "C++",
   "common.label.java": "Java",
@@ -16,12 +17,13 @@
   "common.label.php": "PHP",
   "common.label.css": "CSS",
   "common.label.html": "HTML",
-  "common.label.react": "React framework",
+  "common.label.react": "React library",
   "common.label.angular": "Angular framework",
   "common.label.node": "Node.js",
   "common.label.net": ".NET framework",
   "common.label.vaadin": "Vaadin",
   "common.label.spring": "Spring framework",
+  "common.label.salesforce-development": "Salesforce development",
 
   "common.message.welcome": "Welcome to my Portfolio!",
 
@@ -85,13 +87,18 @@
 
   "education-page.label.education3.name": "Master degree at faculty of Computer Science",
   "education-page.label.education3.place": "Utrecht University, Netherlands",
-  "education-page.label.education3.period": "September 2021 - July 2023",
+  "education-page.label.education3.period": "September 2021 - December 2023",
   "education-page.label.education3.grade": "Average grade: 9 / 10",
 
   "work-experience-page.label.short-description": "Short description:",
   "work-experience-page.label.tech-stack": "Tech stack: ",
 
-  "work-experience-page.label.work-experience4.name": "Full stack web developer at Do it big agency",
+  "work-experience-page.label.work-experience5.name": "Full stack senior web developer at financiallease.nl",
+  "work-experience-page.label.work-experience5.period": "16 September 2022 - Present",
+  "work-experience-page.label.work-experience5.description": "At this company I was involved in developing a mobile application for car leasing.",
+  "work-experience-page.label.work-experience5.tech-stack": "React Native, TypeScript, Node.js, AWS (especially Amplify), Python, Salesforce development (Apex)",
+
+  "work-experience-page.label.work-experience4.name": "Full stack middle web developer at Do it big agency",
   "work-experience-page.label.work-experience4.period": "15 November 2021 - 18 February 2022",
   "work-experience-page.label.work-experience4.description": "At this company I was involved in developing web applications for food delivery and restaurants.",
   "work-experience-page.label.work-experience4.tech-stack": "Angular, Angular Material, TypeScript, Node.js (with Nest.js), PostgreSQL, AWS services",
@@ -126,8 +133,8 @@
   "other-information-page.label.publication2": "Paper \"Optimization algorithms in autonomous art generation.\" presented at Student Scientific Communication Session (Conference) Cluj-Napoca, Romania 2021.",
 
   "other-information-page.label.awards": "Honors and awards:",
-  "other-information-page.label.award1": "Laureate of the Gala of Students from Moldova(Chisinau,Republic of Moldova,2020)",
-  "other-information-page.label.award2": "2nd Place at UBB Hack for Goods Hackathon (Romania,Cluj Napoca,2020)",
+  "other-information-page.label.award1": "Laureate of the Gala of Students from Moldova(Chisinau, Republic of Moldova, 2020)",
+  "other-information-page.label.award2": "2nd Place at UBB Hack for Goods Hackathon (Cluj Napoca, Romania, 2020)",
   "other-information-page.label.award3": "1st place at the Olympiad of Economic Sciences at the Republican level (Republic of Moldova, Chisinau, 2018 )",
   "other-information-page.label.award4": "1st place at the regional Olympiad of Informatics ( Ungheni district, Republic of Moldova, 2018 )",
   "other-information-page.label.award5": "2nd place at the regional Olympiad of Mathematics ( Ungheni district, Republic of Moldova, 2018 )",
